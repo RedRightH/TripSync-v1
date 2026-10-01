@@ -1,0 +1,11 @@
+# ── Runtime ───────────────────────────────────────────────────────────────────
+# The core engine and simulators use only the Python standard library.
+python-dotenv>=1.0.0     # loads .env (GROQ_API_KEY) once the Groq agent lands (Gate 2)
+groq>=0.9.0              # Groq SDK, used from Gate 2 (agent loop)
+
+# ── Testing ───────────────────────────────────────────────────────────────────
+pytest>=8.0
+hypothesis>=6.0
+
+# ── Install the package itself (editable) ────────────────────────────────────
+-e .
